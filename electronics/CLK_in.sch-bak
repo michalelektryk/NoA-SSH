@@ -1,0 +1,306 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 11
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 9100 3450 2    50   Output ~ 0
+CLK_out
+Text HLabel 3350 2800 0    50   Input ~ 0
+norm_in
+$Comp
+L Connector:AudioJack2_SwitchT J9
+U 1 1 616D25CC
+P 6450 3450
+F 0 "J9" H 6271 3383 50  0000 R CNN
+F 1 "AudioJack2_SwitchT" H 6271 3474 50  0000 R CNN
+F 2 "jacks:thonkiconn" H 6450 3450 50  0001 C CNN
+F 3 "~" H 6450 3450 50  0001 C CNN
+	1    6450 3450
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0183
+U 1 1 616D2E1A
+P 6750 3650
+F 0 "#PWR0183" H 6750 3400 50  0001 C CNN
+F 1 "GND" H 6755 3477 50  0000 C CNN
+F 2 "" H 6750 3650 50  0001 C CNN
+F 3 "" H 6750 3650 50  0001 C CNN
+	1    6750 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3550 6750 3550
+Wire Wire Line
+	6750 3550 6750 3650
+Wire Wire Line
+	6750 3350 6650 3350
+Text Notes 8200 2550 0    50   ~ 0
+clk out has to be in 0-5V range\n
+$Comp
+L Device:R R67
+U 1 1 616AA4DA
+P 8850 3450
+F 0 "R67" V 8643 3450 50  0000 C CNN
+F 1 "1k" V 8734 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8780 3450 50  0001 C CNN
+F 3 "~" H 8850 3450 50  0001 C CNN
+	1    8850 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R66
+U 1 1 616AB4A6
+P 7800 3450
+F 0 "R66" V 8007 3450 50  0000 C CNN
+F 1 "100k" V 7916 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7730 3450 50  0001 C CNN
+F 3 "~" H 7800 3450 50  0001 C CNN
+	1    7800 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9100 3450 9000 3450
+Wire Wire Line
+	7450 3450 7650 3450
+$Comp
+L Comparator:LMV331 U17
+U 1 1 619769D2
+P 4750 2900
+F 0 "U17" H 5094 2946 50  0000 L CNN
+F 1 "AP331A" H 5094 2855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4750 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmv331.pdf" H 4750 3100 50  0001 C CNN
+	1    4750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0185
+U 1 1 6197737D
+P 4350 3100
+F 0 "#PWR0185" H 4350 2850 50  0001 C CNN
+F 1 "GND" H 4355 2927 50  0000 C CNN
+F 2 "" H 4350 3100 50  0001 C CNN
+F 3 "" H 4350 3100 50  0001 C CNN
+	1    4350 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3100 4350 3000
+Wire Wire Line
+	4350 3000 4450 3000
+Wire Wire Line
+	4350 2800 4450 2800
+$Comp
+L power:-12V #PWR?
+U 1 1 6197C124
+P 3900 3800
+AR Path="/616AE6D8/6197C124" Ref="#PWR?"  Part="1" 
+AR Path="/6161DB85/6197C124" Ref="#PWR0186"  Part="1" 
+F 0 "#PWR0186" H 3900 3900 50  0001 C CNN
+F 1 "-12V" H 3915 3973 50  0000 C CNN
+F 2 "" H 3900 3800 50  0001 C CNN
+F 3 "" H 3900 3800 50  0001 C CNN
+	1    3900 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 6197C12A
+P 3900 2050
+AR Path="/616AE6D8/6197C12A" Ref="#PWR?"  Part="1" 
+AR Path="/6161DB85/6197C12A" Ref="#PWR0196"  Part="1" 
+F 0 "#PWR0196" H 3900 1900 50  0001 C CNN
+F 1 "+12V" H 3915 2223 50  0000 C CNN
+F 2 "" H 3900 2050 50  0001 C CNN
+F 3 "" H 3900 2050 50  0001 C CNN
+	1    3900 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6197C130
+P 3900 2450
+AR Path="/616AE6D8/6197C130" Ref="C?"  Part="1" 
+AR Path="/6161DB85/6197C130" Ref="C26"  Part="1" 
+F 0 "C26" H 4015 2496 50  0000 L CNN
+F 1 "100n" H 4015 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3938 2300 50  0001 C CNN
+F 3 "~" H 3900 2450 50  0001 C CNN
+	1    3900 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6197C136
+P 3900 2700
+AR Path="/616AE6D8/6197C136" Ref="#PWR?"  Part="1" 
+AR Path="/6161DB85/6197C136" Ref="#PWR0197"  Part="1" 
+F 0 "#PWR0197" H 3900 2450 50  0001 C CNN
+F 1 "GND" H 3905 2527 50  0000 C CNN
+F 2 "" H 3900 2700 50  0001 C CNN
+F 3 "" H 3900 2700 50  0001 C CNN
+	1    3900 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2700 3900 2600
+$Comp
+L Device:C C?
+U 1 1 6197C147
+P 3900 3400
+AR Path="/616AE6D8/6197C147" Ref="C?"  Part="1" 
+AR Path="/6161DB85/6197C147" Ref="C27"  Part="1" 
+F 0 "C27" H 4015 3446 50  0000 L CNN
+F 1 "100n" H 4015 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3938 3250 50  0001 C CNN
+F 3 "~" H 3900 3400 50  0001 C CNN
+	1    3900 3400
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6197C14D
+P 3900 3150
+AR Path="/616AE6D8/6197C14D" Ref="#PWR?"  Part="1" 
+AR Path="/6161DB85/6197C14D" Ref="#PWR0198"  Part="1" 
+F 0 "#PWR0198" H 3900 2900 50  0001 C CNN
+F 1 "GND" H 3905 2977 50  0000 C CNN
+F 2 "" H 3900 3150 50  0001 C CNN
+F 3 "" H 3900 3150 50  0001 C CNN
+	1    3900 3150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3900 3150 3900 3250
+Wire Wire Line
+	3900 3700 3900 3550
+Wire Wire Line
+	3900 3700 3900 3800
+Connection ~ 3900 3700
+Wire Wire Line
+	3900 2050 3900 2150
+Wire Wire Line
+	4650 3700 4650 3200
+Wire Wire Line
+	3900 3700 4650 3700
+Wire Wire Line
+	4650 2600 4650 2150
+Wire Wire Line
+	4650 2150 3900 2150
+Connection ~ 3900 2150
+Wire Wire Line
+	3900 2150 3900 2300
+Wire Wire Line
+	5050 2900 5100 2900
+Wire Wire Line
+	6750 2900 6750 3350
+$Comp
+L Diode:BAV199DW D2
+U 2 1 61ACAC5F
+P 8400 4450
+F 0 "D2" V 8354 4530 50  0000 L CNN
+F 1 "BAV199DW" V 8445 4530 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 8400 3950 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30417.pdf" H 8400 4450 50  0001 C CNN
+	2    8400 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0199
+U 1 1 61ACB0D2
+P 8000 4450
+F 0 "#PWR0199" H 8000 4300 50  0001 C CNN
+F 1 "+5V" H 8015 4623 50  0000 C CNN
+F 2 "" H 8000 4450 50  0001 C CNN
+F 3 "" H 8000 4450 50  0001 C CNN
+	1    8000 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0200
+U 1 1 61ACB892
+P 8800 4450
+F 0 "#PWR0200" H 8800 4200 50  0001 C CNN
+F 1 "GND" H 8805 4277 50  0000 C CNN
+F 2 "" H 8800 4450 50  0001 C CNN
+F 3 "" H 8800 4450 50  0001 C CNN
+	1    8800 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8800 4450 8700 4450
+Wire Wire Line
+	8000 4450 8100 4450
+Wire Wire Line
+	7950 3450 8400 3450
+Wire Wire Line
+	8400 4250 8400 3450
+Connection ~ 8400 3450
+Wire Wire Line
+	8400 3450 8700 3450
+$Comp
+L Device:R R?
+U 1 1 61CE1D44
+P 3600 2800
+AR Path="/6161DA86/61CE1D44" Ref="R?"  Part="1" 
+AR Path="/6161DB7D/61CE1D44" Ref="R?"  Part="1" 
+AR Path="/616EE8BC/61CE1D44" Ref="R?"  Part="1" 
+AR Path="/61CE1D44" Ref="R?"  Part="1" 
+AR Path="/6161DB85/61CE1D44" Ref="R74"  Part="1" 
+F 0 "R74" V 3393 2800 50  0000 C CNN
+F 1 "1k" V 3484 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3530 2800 50  0001 C CNN
+F 3 "~" H 3600 2800 50  0001 C CNN
+	1    3600 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61CE1D4A
+P 4850 2550
+AR Path="/6161DA86/61CE1D4A" Ref="R?"  Part="1" 
+AR Path="/6161DB7D/61CE1D4A" Ref="R?"  Part="1" 
+AR Path="/616EE8BC/61CE1D4A" Ref="R?"  Part="1" 
+AR Path="/61CE1D4A" Ref="R?"  Part="1" 
+AR Path="/6161DB85/61CE1D4A" Ref="R72"  Part="1" 
+F 0 "R72" V 4643 2550 50  0000 C CNN
+F 1 "250k" V 4734 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4780 2550 50  0001 C CNN
+F 3 "~" H 4850 2550 50  0001 C CNN
+	1    4850 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 2550 4350 2550
+Wire Wire Line
+	4350 2550 4350 2800
+Wire Wire Line
+	5000 2550 5100 2550
+Wire Wire Line
+	5100 2550 5100 2900
+Connection ~ 5100 2900
+Wire Wire Line
+	5100 2900 6750 2900
+Wire Wire Line
+	3750 2800 4350 2800
+Connection ~ 4350 2800
+Wire Wire Line
+	3450 2800 3350 2800
+Text HLabel 6800 3450 2    50   Output ~ 0
+top
+Text HLabel 7450 3450 0    50   Output ~ 0
+bottom
+Wire Wire Line
+	6800 3450 6650 3450
+$EndSCHEMATC

@@ -1,0 +1,322 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 11
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 6500 1300 2    50   Output ~ 0
+out1
+Text HLabel 6500 2050 2    50   Output ~ 0
+out2
+Text HLabel 6500 2800 2    50   Output ~ 0
+out3
+$Comp
+L Device:C C25
+U 1 1 61687B59
+P 4650 3200
+F 0 "C25" H 4765 3246 50  0000 L CNN
+F 1 "100n" H 4765 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4688 3050 50  0001 C CNN
+F 3 "~" H 4650 3200 50  0001 C CNN
+	1    4650 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0192
+U 1 1 61688193
+P 4350 5200
+F 0 "#PWR0192" H 4350 4950 50  0001 C CNN
+F 1 "GND" H 4355 5027 50  0000 C CNN
+F 2 "" H 4350 5200 50  0001 C CNN
+F 3 "" H 4350 5200 50  0001 C CNN
+	1    4350 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5200 4350 4950
+$Comp
+L power:GND #PWR0193
+U 1 1 616889AA
+P 4050 3450
+F 0 "#PWR0193" H 4050 3200 50  0001 C CNN
+F 1 "GND" H 4055 3277 50  0000 C CNN
+F 2 "" H 4050 3450 50  0001 C CNN
+F 3 "" H 4050 3450 50  0001 C CNN
+	1    4050 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3450 4050 3350
+Wire Wire Line
+	4050 3050 4050 2950
+Wire Wire Line
+	4050 2950 4250 2950
+Wire Wire Line
+	4250 2950 4250 3550
+$Comp
+L Device:C C24
+U 1 1 6168AC79
+P 4050 3200
+F 0 "C24" H 4165 3246 50  0000 L CNN
+F 1 "100n" H 4165 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4088 3050 50  0001 C CNN
+F 3 "~" H 4050 3200 50  0001 C CNN
+	1    4050 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0194
+U 1 1 6168AC7F
+P 4650 3450
+F 0 "#PWR0194" H 4650 3200 50  0001 C CNN
+F 1 "GND" H 4655 3277 50  0000 C CNN
+F 2 "" H 4650 3450 50  0001 C CNN
+F 3 "" H 4650 3450 50  0001 C CNN
+	1    4650 3450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3450 4650 3350
+Wire Wire Line
+	4650 3050 4650 2950
+Wire Wire Line
+	4650 2950 4450 2950
+Wire Wire Line
+	4450 2950 4450 3550
+Wire Wire Line
+	4350 2850 4350 2950
+Wire Wire Line
+	4350 2950 4250 2950
+Connection ~ 4250 2950
+Wire Wire Line
+	4350 2950 4450 2950
+Connection ~ 4350 2950
+Connection ~ 4450 2950
+$Comp
+L switch:SS-16F03 S2
+U 1 1 6168FE9A
+P 6100 1300
+F 0 "S2" H 6175 1775 50  0000 C CNN
+F 1 "channel_1" H 6175 1684 50  0000 C CNN
+F 2 "learning:SS-16F03" H 6100 1300 50  0001 C CNN
+F 3 "" H 6100 1300 50  0001 C CNN
+	1    6100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L switch:SS-16F03 S3
+U 1 1 61691963
+P 6100 2050
+F 0 "S3" H 6175 2525 50  0000 C CNN
+F 1 "channel_2" H 6175 2434 50  0000 C CNN
+F 2 "learning:SS-16F03" H 6100 2050 50  0001 C CNN
+F 3 "" H 6100 2050 50  0001 C CNN
+	1    6100 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L switch:SS-16F03 S4
+U 1 1 61692D23
+P 6100 2800
+F 0 "S4" H 6175 3275 50  0000 C CNN
+F 1 "channel_3" H 6175 3184 50  0000 C CNN
+F 2 "learning:SS-16F03" H 6100 2800 50  0001 C CNN
+F 3 "" H 6100 2800 50  0001 C CNN
+	1    6100 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2550 5850 2550
+Wire Wire Line
+	5850 2550 5850 1800
+Wire Wire Line
+	5850 1050 5950 1050
+Wire Wire Line
+	5950 1150 5800 1150
+Wire Wire Line
+	5800 1150 5800 1900
+Wire Wire Line
+	5800 2650 5950 2650
+Wire Wire Line
+	5750 1250 5950 1250
+Wire Wire Line
+	5950 1350 5700 1350
+Wire Wire Line
+	5700 1350 5700 2100
+Wire Wire Line
+	5700 2850 5950 2850
+Wire Wire Line
+	5950 2950 5650 2950
+Wire Wire Line
+	5650 1450 5950 1450
+Wire Wire Line
+	5950 1550 5600 1550
+Wire Wire Line
+	5600 1550 5600 2300
+Wire Wire Line
+	5600 3050 5950 3050
+Wire Wire Line
+	5950 1800 5850 1800
+Connection ~ 5850 1800
+Wire Wire Line
+	5850 1800 5850 1050
+Wire Wire Line
+	5950 1900 5800 1900
+Connection ~ 5800 1900
+Wire Wire Line
+	5800 1900 5800 2650
+Wire Wire Line
+	5750 2000 5950 2000
+Connection ~ 5750 2000
+Wire Wire Line
+	5750 2000 5750 1250
+Wire Wire Line
+	5950 2100 5700 2100
+Connection ~ 5700 2100
+Wire Wire Line
+	5700 2100 5700 2850
+Wire Wire Line
+	5650 2200 5950 2200
+Connection ~ 5650 2200
+Wire Wire Line
+	5650 2200 5650 1450
+Wire Wire Line
+	5950 2300 5600 2300
+Connection ~ 5600 2300
+Wire Wire Line
+	5600 2300 5600 3050
+Connection ~ 5850 2550
+Connection ~ 5800 2650
+Connection ~ 5700 2850
+Wire Wire Line
+	5650 2200 5650 2950
+Connection ~ 5650 2950
+Connection ~ 5600 3050
+Wire Wire Line
+	3000 3850 3350 3850
+Wire Wire Line
+	3250 4050 3350 4050
+Text HLabel 3250 4050 0    50   Input ~ 0
+clk_in
+Text Notes 2750 1150 0    50   ~ 0
+10k,100k,1MEG pull-up or pull-down\navailable at all pins
+Wire Wire Line
+	6500 1300 6400 1300
+Wire Wire Line
+	6500 2050 6400 2050
+Wire Wire Line
+	6500 2800 6400 2800
+Text GLabel 6000 4450 2    50   Input ~ 0
+SCL1
+Text GLabel 6000 4550 2    50   Input ~ 0
+SDA1
+Text Notes 750  3550 0    50   ~ 0
+clock in - wejscie referencyjnego zegara do podzialu
+Text Notes 750  3650 0    50   ~ 0
+trigger on 2.5V
+Wire Wire Line
+	5450 4450 6000 4450
+Wire Wire Line
+	5450 4550 6000 4550
+Wire Wire Line
+	5450 4650 5600 4650
+Wire Wire Line
+	5600 3050 5600 4650
+Wire Wire Line
+	5450 4350 5650 4350
+Wire Wire Line
+	5650 2950 5650 4350
+$Comp
+L greenpak_ICs:SLG46824 U16
+U 1 1 616865ED
+P 4350 4250
+F 0 "U16" H 4400 3461 50  0000 C CNN
+F 1 "SLG46824" H 4400 3370 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 4100 4200 50  0001 C CNN
+F 3 "" H 4100 4300 50  0001 C CNN
+	1    4350 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4250 5700 4250
+Wire Wire Line
+	5700 2850 5700 4250
+Wire Wire Line
+	5450 4150 5750 4150
+Wire Wire Line
+	5450 4050 5800 4050
+Wire Wire Line
+	5450 3950 5850 3950
+Wire Wire Line
+	5850 3950 5850 2550
+Wire Wire Line
+	5750 2000 5750 2750
+Wire Wire Line
+	5800 2650 5800 4050
+Wire Wire Line
+	5950 2750 5750 2750
+Connection ~ 5750 2750
+Wire Wire Line
+	5750 2750 5750 4150
+Text HLabel 3000 3850 0    50   Input ~ 0
+bank_in
+$Comp
+L power:+5V #PWR0251
+U 1 1 62096E57
+P 4350 2850
+F 0 "#PWR0251" H 4350 2700 50  0001 C CNN
+F 1 "+5V" H 4365 3023 50  0000 C CNN
+F 2 "" H 4350 2850 50  0001 C CNN
+F 3 "" H 4350 2850 50  0001 C CNN
+	1    4350 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 61FB584A
+P 2850 4150
+F 0 "TP1" V 3045 4222 50  0000 C CNN
+F 1 "TestPoint" V 2954 4222 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3050 4150 50  0001 C CNN
+F 3 "~" H 3050 4150 50  0001 C CNN
+	1    2850 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 61FB7528
+P 2550 4350
+F 0 "TP2" V 2745 4422 50  0000 C CNN
+F 1 "TestPoint" V 2654 4422 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 2750 4350 50  0001 C CNN
+F 3 "~" H 2750 4350 50  0001 C CNN
+	1    2550 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 61FB79F0
+P 2850 4550
+F 0 "TP3" V 3045 4622 50  0000 C CNN
+F 1 "TestPoint" V 2954 4622 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3050 4550 50  0001 C CNN
+F 3 "~" H 3050 4550 50  0001 C CNN
+	1    2850 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2850 4550 3350 4550
+Wire Wire Line
+	3350 4350 2550 4350
+Wire Wire Line
+	2850 4150 3350 4150
+$EndSCHEMATC

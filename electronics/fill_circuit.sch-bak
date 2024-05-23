@@ -1,0 +1,244 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 11
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5650 1550 5750 1550
+Wire Wire Line
+	5650 1550 5550 1550
+Connection ~ 5650 1550
+Wire Wire Line
+	5650 1450 5650 1550
+Wire Wire Line
+	5750 1550 5750 2150
+Connection ~ 5750 1550
+Wire Wire Line
+	5950 1550 5750 1550
+Wire Wire Line
+	5950 1650 5950 1550
+Wire Wire Line
+	5950 2050 5950 1950
+$Comp
+L power:GND #PWR?
+U 1 1 616BFCE5
+P 5950 2050
+AR Path="/6161D56A/616BFCE5" Ref="#PWR?"  Part="1" 
+AR Path="/616BCDDC/616BFCE5" Ref="#PWR0169"  Part="1" 
+F 0 "#PWR0169" H 5950 1800 50  0001 C CNN
+F 1 "GND" H 5955 1877 50  0000 C CNN
+F 2 "" H 5950 2050 50  0001 C CNN
+F 3 "" H 5950 2050 50  0001 C CNN
+	1    5950 2050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 616BFCEB
+P 5350 1800
+AR Path="/6161D56A/616BFCEB" Ref="C?"  Part="1" 
+AR Path="/616BCDDC/616BFCEB" Ref="C18"  Part="1" 
+F 0 "C18" H 5465 1846 50  0000 L CNN
+F 1 "100n" H 5465 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5388 1650 50  0001 C CNN
+F 3 "~" H 5350 1800 50  0001 C CNN
+	1    5350 1800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1550 5550 2150
+Connection ~ 5550 1550
+Wire Wire Line
+	5350 1550 5550 1550
+Wire Wire Line
+	5350 1650 5350 1550
+Wire Wire Line
+	5350 2050 5350 1950
+$Comp
+L power:GND #PWR?
+U 1 1 616BFCF6
+P 5350 2050
+AR Path="/6161D56A/616BFCF6" Ref="#PWR?"  Part="1" 
+AR Path="/616BCDDC/616BFCF6" Ref="#PWR0170"  Part="1" 
+F 0 "#PWR0170" H 5350 1800 50  0001 C CNN
+F 1 "GND" H 5355 1877 50  0000 C CNN
+F 2 "" H 5350 2050 50  0001 C CNN
+F 3 "" H 5350 2050 50  0001 C CNN
+	1    5350 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3800 5650 3550
+$Comp
+L power:GND #PWR?
+U 1 1 616BFCFD
+P 5650 3800
+AR Path="/6161D56A/616BFCFD" Ref="#PWR?"  Part="1" 
+AR Path="/616BCDDC/616BFCFD" Ref="#PWR0171"  Part="1" 
+F 0 "#PWR0171" H 5650 3550 50  0001 C CNN
+F 1 "GND" H 5655 3627 50  0000 C CNN
+F 2 "" H 5650 3800 50  0001 C CNN
+F 3 "" H 5650 3800 50  0001 C CNN
+	1    5650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 616BFD03
+P 5950 1800
+AR Path="/6161D56A/616BFD03" Ref="C?"  Part="1" 
+AR Path="/616BCDDC/616BFD03" Ref="C19"  Part="1" 
+F 0 "C19" H 6065 1846 50  0000 L CNN
+F 1 "100n" H 6065 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5988 1650 50  0001 C CNN
+F 3 "~" H 5950 1800 50  0001 C CNN
+	1    5950 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 616BFD09
+P 5650 1450
+AR Path="/6161D56A/616BFD09" Ref="#PWR?"  Part="1" 
+AR Path="/616BCDDC/616BFD09" Ref="#PWR0172"  Part="1" 
+F 0 "#PWR0172" H 5650 1300 50  0001 C CNN
+F 1 "+5V" H 5665 1623 50  0000 C CNN
+F 2 "" H 5650 1450 50  0001 C CNN
+F 3 "" H 5650 1450 50  0001 C CNN
+	1    5650 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L greenpak_ICs:SLG46824 U?
+U 1 1 616BFD0F
+P 5650 2850
+AR Path="/6161D56A/616BFD0F" Ref="U?"  Part="1" 
+AR Path="/616BCDDC/616BFD0F" Ref="U13"  Part="1" 
+F 0 "U13" H 5700 2061 50  0000 C CNN
+F 1 "SLG46824" H 5700 1970 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 5400 2800 50  0001 C CNN
+F 3 "" H 5400 2900 50  0001 C CNN
+	1    5650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L switch:SS-16F03 S?
+U 1 1 616BFD15
+P 7450 2700
+AR Path="/6161D56A/616BFD15" Ref="S?"  Part="1" 
+AR Path="/616BCDDC/616BFD15" Ref="S1"  Part="1" 
+F 0 "S1" H 7525 3175 50  0000 C CNN
+F 1 "fill_switch" H 7525 3084 50  0000 C CNN
+F 2 "learning:SS-16F03" H 7450 2700 50  0001 C CNN
+F 3 "" H 7450 2700 50  0001 C CNN
+	1    7450 2700
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616BFD1B
+P 7850 2700
+AR Path="/6161D56A/616BFD1B" Ref="#PWR?"  Part="1" 
+AR Path="/616BCDDC/616BFD1B" Ref="#PWR0173"  Part="1" 
+F 0 "#PWR0173" H 7850 2450 50  0001 C CNN
+F 1 "GND" V 7855 2572 50  0000 R CNN
+F 2 "" H 7850 2700 50  0001 C CNN
+F 3 "" H 7850 2700 50  0001 C CNN
+	1    7850 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7850 2700 7750 2700
+Text HLabel 4550 2550 0    50   Input ~ 0
+in1
+Text HLabel 4550 2650 0    50   Input ~ 0
+in2
+Text HLabel 4550 2850 0    50   Input ~ 0
+in3
+Text HLabel 4550 3250 0    50   Output ~ 0
+out1
+Text HLabel 6850 3250 2    50   Output ~ 0
+out2
+Text HLabel 6850 2350 2    50   Output ~ 0
+out3
+Wire Wire Line
+	6850 3050 6750 3050
+Wire Wire Line
+	6850 3150 6750 3150
+Wire Wire Line
+	6750 3250 6850 3250
+Wire Wire Line
+	4650 3250 4550 3250
+Wire Wire Line
+	6850 2350 6700 2350
+Wire Wire Line
+	6700 2350 6700 1200
+Wire Wire Line
+	6700 1200 4550 1200
+Wire Wire Line
+	4550 1200 4550 2450
+Wire Wire Line
+	4550 2450 4650 2450
+Wire Wire Line
+	4550 2550 4650 2550
+Wire Wire Line
+	4550 2650 4650 2650
+Wire Wire Line
+	4550 2850 4650 2850
+Text GLabel 6850 3050 2    50   Input ~ 0
+SCL2
+Text GLabel 6850 3150 2    50   Input ~ 0
+SDA2
+Wire Wire Line
+	6750 2450 7300 2450
+Wire Wire Line
+	6750 2550 7300 2550
+Wire Wire Line
+	6750 2650 7300 2650
+Wire Wire Line
+	6750 2750 7300 2750
+Wire Wire Line
+	6750 2850 7300 2850
+Wire Wire Line
+	6750 2950 7300 2950
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61FBF37E
+P 4250 2750
+AR Path="/6161D56A/61FBF37E" Ref="TP?"  Part="1" 
+AR Path="/616BCDDC/61FBF37E" Ref="TP4"  Part="1" 
+F 0 "TP4" V 4445 2822 50  0000 C CNN
+F 1 "TestPoint" V 4354 2822 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 4450 2750 50  0001 C CNN
+F 3 "~" H 4450 2750 50  0001 C CNN
+	1    4250 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 2750 4650 2750
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61FBF80E
+P 4250 3150
+AR Path="/6161D56A/61FBF80E" Ref="TP?"  Part="1" 
+AR Path="/616BCDDC/61FBF80E" Ref="TP5"  Part="1" 
+F 0 "TP5" V 4445 3222 50  0000 C CNN
+F 1 "TestPoint" V 4354 3222 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 4450 3150 50  0001 C CNN
+F 3 "~" H 4450 3150 50  0001 C CNN
+	1    4250 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 3150 4650 3150
+$EndSCHEMATC

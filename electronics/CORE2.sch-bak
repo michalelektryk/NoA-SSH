@@ -1,0 +1,378 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 15
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3950 3850 0    50   Input ~ 0
+in
+Text HLabel 5050 3050 0    50   Input ~ 0
+CV
+Text HLabel 6300 5600 0    50   Output ~ 0
+out
+$Comp
+L Amplifier_Operational:LM13700 U?
+U 1 1 6165D8D7
+P 5150 3950
+F 0 "U?" H 5150 4317 50  0000 C CNN
+F 1 "LM13700" H 5150 4226 50  0000 C CNN
+F 2 "" H 4850 3975 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 4850 3975 50  0001 C CNN
+	1    5150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM13700 U?
+U 3 1 6165EC35
+P 7050 4050
+F 0 "U?" H 7050 4417 50  0000 C CNN
+F 1 "LM13700" H 7050 4326 50  0000 C CNN
+F 2 "" H 6750 4075 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 6750 4075 50  0001 C CNN
+	3    7050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6165FD03
+P 4750 4300
+F 0 "R?" H 4820 4346 50  0000 L CNN
+F 1 "400" H 4820 4255 50  0000 L CNN
+F 2 "" V 4680 4300 50  0001 C CNN
+F 3 "~" H 4750 4300 50  0001 C CNN
+	1    4750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61660A99
+P 4450 4300
+F 0 "R?" H 4520 4346 50  0000 L CNN
+F 1 "400" H 4520 4255 50  0000 L CNN
+F 2 "" V 4380 4300 50  0001 C CNN
+F 3 "~" H 4450 4300 50  0001 C CNN
+	1    4450 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61660E14
+P 4200 3850
+F 0 "R?" V 4407 3850 50  0000 C CNN
+F 1 "100k" V 4316 3850 50  0000 C CNN
+F 2 "" V 4130 3850 50  0001 C CNN
+F 3 "~" H 4200 3850 50  0001 C CNN
+	1    4200 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61661BC1
+P 4450 4500
+F 0 "#PWR?" H 4450 4250 50  0001 C CNN
+F 1 "GND" H 4455 4327 50  0000 C CNN
+F 2 "" H 4450 4500 50  0001 C CNN
+F 3 "" H 4450 4500 50  0001 C CNN
+	1    4450 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61661E93
+P 4750 4500
+F 0 "#PWR?" H 4750 4250 50  0001 C CNN
+F 1 "GND" H 4755 4327 50  0000 C CNN
+F 2 "" H 4750 4500 50  0001 C CNN
+F 3 "" H 4750 4500 50  0001 C CNN
+	1    4750 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC856 Q?
+U 1 1 6166289A
+P 5450 3350
+F 0 "Q?" H 5641 3304 50  0000 L CNN
+F 1 "BC856" H 5641 3395 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5650 3275 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 5450 3350 50  0001 L CNN
+	1    5450 3350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5550 3550 5550 4050
+Wire Wire Line
+	5550 4050 5450 4050
+Text GLabel 5150 3350 0    50   Input ~ 0
+-0.7V
+Wire Wire Line
+	5150 3350 5250 3350
+Wire Wire Line
+	4850 4050 4750 4050
+Wire Wire Line
+	4750 4050 4750 4150
+Wire Wire Line
+	4450 4150 4450 3850
+Wire Wire Line
+	4450 3850 4850 3850
+Wire Wire Line
+	4350 3850 4450 3850
+Connection ~ 4450 3850
+Wire Wire Line
+	4450 4500 4450 4450
+Wire Wire Line
+	4750 4500 4750 4450
+$Comp
+L power:+5V #PWR?
+U 1 1 61665626
+P 5550 2600
+F 0 "#PWR?" H 5550 2450 50  0001 C CNN
+F 1 "+5V" H 5565 2773 50  0000 C CNN
+F 2 "" H 5550 2600 50  0001 C CNN
+F 3 "" H 5550 2600 50  0001 C CNN
+	1    5550 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61665ADA
+P 5550 2800
+F 0 "R?" H 5620 2846 50  0000 L CNN
+F 1 "10k" H 5620 2755 50  0000 L CNN
+F 2 "" V 5480 2800 50  0001 C CNN
+F 3 "~" H 5550 2800 50  0001 C CNN
+	1    5550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61666179
+P 5300 3050
+F 0 "R?" V 5093 3050 50  0000 C CNN
+F 1 "20k" V 5184 3050 50  0000 C CNN
+F 2 "" V 5230 3050 50  0001 C CNN
+F 3 "~" H 5300 3050 50  0001 C CNN
+	1    5300 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 3050 5550 3050
+Wire Wire Line
+	5550 3050 5550 3150
+Wire Wire Line
+	5550 2950 5550 3050
+Connection ~ 5550 3050
+Wire Wire Line
+	5550 2600 5550 2650
+Wire Wire Line
+	5150 3050 5050 3050
+Wire Wire Line
+	3950 3850 4050 3850
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 6166A2F3
+P 5750 3950
+F 0 "JP?" H 5750 4135 50  0000 C CNN
+F 1 "test_21" H 5750 4044 50  0000 C CNN
+F 2 "" H 5750 3950 50  0001 C CNN
+F 3 "~" H 5750 3950 50  0001 C CNN
+	1    5750 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3950 5450 3950
+$Comp
+L Device:R R?
+U 1 1 6166E278
+P 6650 4400
+F 0 "R?" H 6720 4446 50  0000 L CNN
+F 1 "400" H 6720 4355 50  0000 L CNN
+F 2 "" V 6580 4400 50  0001 C CNN
+F 3 "~" H 6650 4400 50  0001 C CNN
+	1    6650 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6166EA02
+P 6350 4400
+F 0 "R?" H 6420 4446 50  0000 L CNN
+F 1 "400" H 6420 4355 50  0000 L CNN
+F 2 "" V 6280 4400 50  0001 C CNN
+F 3 "~" H 6350 4400 50  0001 C CNN
+	1    6350 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV?
+U 1 1 6166F282
+P 6100 4400
+F 0 "RV?" V 5893 4400 50  0000 C CNN
+F 1 "1k" V 5984 4400 50  0000 C CNN
+F 2 "" H 6100 4400 50  0001 C CNN
+F 3 "~" H 6100 4400 50  0001 C CNN
+	1    6100 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6166FE34
+P 6100 4600
+F 0 "#PWR?" H 6100 4350 50  0001 C CNN
+F 1 "GND" H 6105 4427 50  0000 C CNN
+F 2 "" H 6100 4600 50  0001 C CNN
+F 3 "" H 6100 4600 50  0001 C CNN
+	1    6100 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4600 6100 4550
+$Comp
+L power:GND #PWR?
+U 1 1 6166FFB7
+P 6350 4600
+F 0 "#PWR?" H 6350 4350 50  0001 C CNN
+F 1 "GND" H 6355 4427 50  0000 C CNN
+F 2 "" H 6350 4600 50  0001 C CNN
+F 3 "" H 6350 4600 50  0001 C CNN
+	1    6350 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4600 6350 4550
+$Comp
+L power:GND #PWR?
+U 1 1 616705B3
+P 6650 4600
+F 0 "#PWR?" H 6650 4350 50  0001 C CNN
+F 1 "GND" H 6655 4427 50  0000 C CNN
+F 2 "" H 6650 4600 50  0001 C CNN
+F 3 "" H 6650 4600 50  0001 C CNN
+	1    6650 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4600 6650 4550
+Wire Wire Line
+	6750 3950 6350 3950
+Wire Wire Line
+	6350 3950 6350 4250
+Wire Wire Line
+	6750 4150 6650 4150
+Wire Wire Line
+	6650 4150 6650 4250
+Wire Wire Line
+	6650 4150 6250 4150
+Wire Wire Line
+	6250 4150 6250 4400
+Connection ~ 6650 4150
+Wire Wire Line
+	5950 4400 5950 3950
+Wire Wire Line
+	5950 3950 6350 3950
+Connection ~ 6350 3950
+Wire Wire Line
+	5850 3950 5950 3950
+Connection ~ 5950 3950
+$Comp
+L Transistor_BJT:BC856 Q?
+U 1 1 61673B37
+P 7350 3450
+F 0 "Q?" H 7541 3404 50  0000 L CNN
+F 1 "BC856" H 7541 3495 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7550 3375 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 7350 3450 50  0001 L CNN
+	1    7350 3450
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7450 3650 7450 4150
+Text GLabel 7050 3450 0    50   Input ~ 0
+-0.7V
+Wire Wire Line
+	7050 3450 7150 3450
+$Comp
+L power:+5V #PWR?
+U 1 1 61673B40
+P 7450 2700
+F 0 "#PWR?" H 7450 2550 50  0001 C CNN
+F 1 "+5V" H 7465 2873 50  0000 C CNN
+F 2 "" H 7450 2700 50  0001 C CNN
+F 3 "" H 7450 2700 50  0001 C CNN
+	1    7450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61673B46
+P 7450 2900
+F 0 "R?" H 7520 2946 50  0000 L CNN
+F 1 "10k" H 7520 2855 50  0000 L CNN
+F 2 "" V 7380 2900 50  0001 C CNN
+F 3 "~" H 7450 2900 50  0001 C CNN
+	1    7450 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61673B4C
+P 7200 3150
+F 0 "R?" V 6993 3150 50  0000 C CNN
+F 1 "20k" V 7084 3150 50  0000 C CNN
+F 2 "" V 7130 3150 50  0001 C CNN
+F 3 "~" H 7200 3150 50  0001 C CNN
+	1    7200 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7350 3150 7450 3150
+Wire Wire Line
+	7450 3150 7450 3250
+Wire Wire Line
+	7450 3050 7450 3150
+Connection ~ 7450 3150
+Wire Wire Line
+	7450 2700 7450 2750
+Wire Wire Line
+	7050 3150 6950 3150
+Wire Wire Line
+	7450 4150 7350 4150
+Text HLabel 6950 3150 0    50   Input ~ 0
+in
+$Comp
+L Device:R R?
+U 1 1 61674776
+P 7550 4300
+F 0 "R?" H 7620 4346 50  0000 L CNN
+F 1 "1k" H 7620 4255 50  0000 L CNN
+F 2 "" V 7480 4300 50  0001 C CNN
+F 3 "~" H 7550 4300 50  0001 C CNN
+	1    7550 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61675256
+P 7550 4500
+F 0 "#PWR?" H 7550 4250 50  0001 C CNN
+F 1 "GND" H 7555 4327 50  0000 C CNN
+F 2 "" H 7550 4500 50  0001 C CNN
+F 3 "" H 7550 4500 50  0001 C CNN
+	1    7550 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4500 7550 4450
+Wire Wire Line
+	7350 4050 7550 4050
+Wire Wire Line
+	7550 4050 7550 4150
+$EndSCHEMATC

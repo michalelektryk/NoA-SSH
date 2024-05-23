@@ -1,0 +1,270 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 14
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 8400 4800 2    50   Output ~ 0
+CVout
+$Comp
+L Device:R_POT RV?
+U 1 1 616F00DC
+P 6950 3650
+F 0 "RV?" H 6881 3696 50  0000 R CNN
+F 1 "param" H 6881 3605 50  0000 R CNN
+F 2 "" H 6950 3650 50  0001 C CNN
+F 3 "~" H 6950 3650 50  0001 C CNN
+	1    6950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 616F0233
+P 5950 5200
+F 0 "RV?" H 5880 5246 50  0000 R CNN
+F 1 "10k" H 5880 5155 50  0000 R CNN
+F 2 "" H 5950 5200 50  0001 C CNN
+F 3 "~" H 5950 5200 50  0001 C CNN
+	1    5950 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 616F0751
+P 5350 4800
+F 0 "J?" H 5171 4733 50  0000 R CNN
+F 1 "CV" H 5171 4824 50  0000 R CNN
+F 2 "" H 5350 4800 50  0001 C CNN
+F 3 "~" H 5350 4800 50  0001 C CNN
+	1    5350 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616F09DD
+P 5650 5000
+F 0 "#PWR?" H 5650 4750 50  0001 C CNN
+F 1 "GND" H 5655 4827 50  0000 C CNN
+F 2 "" H 5650 5000 50  0001 C CNN
+F 3 "" H 5650 5000 50  0001 C CNN
+	1    5650 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4900 5650 4900
+Wire Wire Line
+	5650 4900 5650 5000
+$Comp
+L Amplifier_Operational:TL072 U?
+U 1 1 616F0F96
+P 6600 4900
+F 0 "U?" H 6600 4533 50  0000 C CNN
+F 1 "TL072" H 6600 4624 50  0000 C CNN
+F 2 "" H 6600 4900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6600 4900 50  0001 C CNN
+	1    6600 4900
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616F2CCD
+P 6600 4400
+F 0 "R?" V 6393 4400 50  0000 C CNN
+F 1 "100k" V 6484 4400 50  0000 C CNN
+F 2 "" V 6530 4400 50  0001 C CNN
+F 3 "~" H 6600 4400 50  0001 C CNN
+	1    6600 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616F3153
+P 6050 4800
+F 0 "R?" V 5843 4800 50  0000 C CNN
+F 1 "100k" V 5934 4800 50  0000 C CNN
+F 2 "" V 5980 4800 50  0001 C CNN
+F 3 "~" H 6050 4800 50  0001 C CNN
+	1    6050 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 4400 6250 4400
+Wire Wire Line
+	6250 4400 6250 4800
+Wire Wire Line
+	6250 4800 6300 4800
+Wire Wire Line
+	6200 4800 6250 4800
+Connection ~ 6250 4800
+Wire Wire Line
+	6750 4400 7000 4400
+Wire Wire Line
+	7000 4400 7000 4900
+Wire Wire Line
+	7000 4900 6900 4900
+Wire Wire Line
+	6100 5200 6200 5200
+Wire Wire Line
+	6200 5200 6200 5000
+Wire Wire Line
+	6200 5000 6300 5000
+$Comp
+L power:GND #PWR?
+U 1 1 616F43E9
+P 5950 5400
+F 0 "#PWR?" H 5950 5150 50  0001 C CNN
+F 1 "GND" H 5955 5227 50  0000 C CNN
+F 2 "" H 5950 5400 50  0001 C CNN
+F 3 "" H 5950 5400 50  0001 C CNN
+	1    5950 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 5400 5950 5350
+Wire Wire Line
+	5950 5050 5950 4950
+Wire Wire Line
+	5800 4950 5800 4800
+Wire Wire Line
+	5800 4800 5900 4800
+Wire Wire Line
+	5800 4950 5950 4950
+$Comp
+L Amplifier_Operational:TL072 U?
+U 2 1 616F5D47
+P 7900 4800
+F 0 "U?" H 7900 5167 50  0000 C CNN
+F 1 "TL072" H 7900 5076 50  0000 C CNN
+F 2 "" H 7900 4800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 7900 4800 50  0001 C CNN
+	2    7900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616F9FA9
+P 7250 4900
+F 0 "R?" V 7043 4900 50  0000 C CNN
+F 1 "100k" V 7134 4900 50  0000 C CNN
+F 2 "" V 7180 4900 50  0001 C CNN
+F 3 "~" H 7250 4900 50  0001 C CNN
+	1    7250 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616FA3AF
+P 8050 5150
+F 0 "R?" V 7843 5150 50  0000 C CNN
+F 1 "100k" V 7934 5150 50  0000 C CNN
+F 2 "" V 7980 5150 50  0001 C CNN
+F 3 "~" H 8050 5150 50  0001 C CNN
+	1    8050 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 616FAEB3
+P 6950 3400
+F 0 "#PWR?" H 6950 3250 50  0001 C CNN
+F 1 "+5V" H 6965 3573 50  0000 C CNN
+F 2 "" H 6950 3400 50  0001 C CNN
+F 3 "" H 6950 3400 50  0001 C CNN
+	1    6950 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616FB5D5
+P 6950 3900
+F 0 "#PWR?" H 6950 3650 50  0001 C CNN
+F 1 "GND" H 6955 3727 50  0000 C CNN
+F 2 "" H 6950 3900 50  0001 C CNN
+F 3 "" H 6950 3900 50  0001 C CNN
+	1    6950 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3900 6950 3800
+Wire Wire Line
+	6950 3500 6950 3400
+Wire Wire Line
+	7100 3650 7500 3650
+Wire Wire Line
+	7500 4700 7600 4700
+Wire Wire Line
+	7000 4900 7100 4900
+Connection ~ 7000 4900
+Wire Wire Line
+	7400 4900 7500 4900
+Wire Wire Line
+	8200 5150 8300 5150
+Wire Wire Line
+	8300 5150 8300 4800
+Wire Wire Line
+	8300 4800 8200 4800
+Wire Wire Line
+	7900 5150 7500 5150
+Wire Wire Line
+	7500 5150 7500 4900
+Connection ~ 7500 4900
+Wire Wire Line
+	7500 4900 7600 4900
+$Comp
+L Device:R R?
+U 1 1 616FDF51
+P 7500 4450
+F 0 "R?" H 7430 4404 50  0000 R CNN
+F 1 "100k" H 7430 4495 50  0000 R CNN
+F 2 "" V 7430 4450 50  0001 C CNN
+F 3 "~" H 7500 4450 50  0001 C CNN
+	1    7500 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7500 4700 7500 4600
+Wire Wire Line
+	7500 4300 7500 3650
+$Comp
+L power:+5V #PWR?
+U 1 1 616FFAEE
+P 7000 5150
+F 0 "#PWR?" H 7000 5000 50  0001 C CNN
+F 1 "+5V" V 7015 5278 50  0000 L CNN
+F 2 "" H 7000 5150 50  0001 C CNN
+F 3 "" H 7000 5150 50  0001 C CNN
+	1    7000 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 617003AB
+P 7250 5150
+F 0 "R?" V 7457 5150 50  0000 C CNN
+F 1 "100k" V 7366 5150 50  0000 C CNN
+F 2 "" V 7180 5150 50  0001 C CNN
+F 3 "~" H 7250 5150 50  0001 C CNN
+	1    7250 5150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 5150 7100 5150
+Wire Wire Line
+	7400 5150 7500 5150
+Connection ~ 7500 5150
+Wire Wire Line
+	5550 4800 5800 4800
+Connection ~ 5800 4800
+Wire Wire Line
+	8400 4800 8300 4800
+Connection ~ 8300 4800
+$EndSCHEMATC

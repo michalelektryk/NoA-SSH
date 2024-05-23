@@ -1,0 +1,292 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 11
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 5300 3400 0    50   Input ~ 0
+in1
+$Comp
+L Amplifier_Operational:TL072 U?
+U 1 1 616DDD6F
+P 5800 3300
+AR Path="/6161DA86/616DDD6F" Ref="U?"  Part="1" 
+AR Path="/6161DB7D/616DDD6F" Ref="U15"  Part="1" 
+AR Path="/616EE8BC/616DDD6F" Ref="U11"  Part="1" 
+F 0 "U11" H 5800 3667 50  0000 C CNN
+F 1 "TL072" H 5800 3576 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5800 3300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5800 3300 50  0001 C CNN
+	1    5800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 616DEC4E
+P 6950 3300
+AR Path="/6161DA86/616DEC4E" Ref="J?"  Part="1" 
+AR Path="/6161DB7D/616DEC4E" Ref="J10"  Part="1" 
+AR Path="/616EE8BC/616DEC4E" Ref="J6"  Part="1" 
+F 0 "J6" H 6770 3233 50  0000 R CNN
+F 1 "AudioJack2_SwitchT" H 6770 3324 50  0000 R CNN
+F 2 "jacks:thonkiconn" H 6950 3300 50  0001 C CNN
+F 3 "~" H 6950 3300 50  0001 C CNN
+	1    6950 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616DFCEF
+P 6350 3300
+AR Path="/6161DA86/616DFCEF" Ref="R?"  Part="1" 
+AR Path="/6161DB7D/616DFCEF" Ref="R68"  Part="1" 
+AR Path="/616EE8BC/616DFCEF" Ref="R56"  Part="1" 
+F 0 "R56" V 6143 3300 50  0000 C CNN
+F 1 "400" V 6234 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6280 3300 50  0001 C CNN
+F 3 "~" H 6350 3300 50  0001 C CNN
+	1    6350 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 616E0805
+P 5950 3650
+AR Path="/6161DA86/616E0805" Ref="C?"  Part="1" 
+AR Path="/6161DB7D/616E0805" Ref="C22"  Part="1" 
+AR Path="/616EE8BC/616E0805" Ref="C16"  Part="1" 
+F 0 "C16" V 5698 3650 50  0000 C CNN
+F 1 "100p" V 5789 3650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5988 3500 50  0001 C CNN
+F 3 "~" H 5950 3650 50  0001 C CNN
+	1    5950 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616E10E4
+P 6350 3800
+AR Path="/6161DA86/616E10E4" Ref="R?"  Part="1" 
+AR Path="/6161DB7D/616E10E4" Ref="R69"  Part="1" 
+AR Path="/616EE8BC/616E10E4" Ref="R57"  Part="1" 
+F 0 "R57" V 6143 3800 50  0000 C CNN
+F 1 "100k" V 6234 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6280 3800 50  0001 C CNN
+F 3 "~" H 6350 3800 50  0001 C CNN
+	1    6350 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 3300 6150 3300
+$Comp
+L power:GND #PWR?
+U 1 1 616E1DAD
+P 5400 3200
+AR Path="/6161DA86/616E1DAD" Ref="#PWR?"  Part="1" 
+AR Path="/6161DB7D/616E1DAD" Ref="#PWR0187"  Part="1" 
+AR Path="/616EE8BC/616E1DAD" Ref="#PWR0162"  Part="1" 
+F 0 "#PWR0162" H 5400 2950 50  0001 C CNN
+F 1 "GND" V 5405 3072 50  0000 R CNN
+F 2 "" H 5400 3200 50  0001 C CNN
+F 3 "" H 5400 3200 50  0001 C CNN
+	1    5400 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616E239A
+P 6650 3500
+AR Path="/6161DA86/616E239A" Ref="#PWR?"  Part="1" 
+AR Path="/6161DB7D/616E239A" Ref="#PWR0188"  Part="1" 
+AR Path="/616EE8BC/616E239A" Ref="#PWR0163"  Part="1" 
+F 0 "#PWR0163" H 6650 3250 50  0001 C CNN
+F 1 "GND" H 6655 3327 50  0000 C CNN
+F 2 "" H 6650 3500 50  0001 C CNN
+F 3 "" H 6650 3500 50  0001 C CNN
+	1    6650 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3500 6650 3400
+Wire Wire Line
+	6650 3400 6750 3400
+Wire Wire Line
+	6750 3300 6600 3300
+Wire Wire Line
+	6500 3800 6600 3800
+Wire Wire Line
+	6600 3800 6600 3300
+Connection ~ 6600 3300
+Wire Wire Line
+	6600 3300 6500 3300
+Wire Wire Line
+	6200 3800 5400 3800
+Wire Wire Line
+	5400 3800 5400 3650
+Wire Wire Line
+	5400 3400 5500 3400
+Wire Wire Line
+	5400 3200 5500 3200
+Wire Wire Line
+	6150 3300 6150 3650
+Wire Wire Line
+	6150 3650 6100 3650
+Connection ~ 6150 3300
+Wire Wire Line
+	6150 3300 6200 3300
+Wire Wire Line
+	5800 3650 5400 3650
+Connection ~ 5400 3650
+Wire Wire Line
+	5400 3650 5400 3400
+Wire Wire Line
+	5300 3400 5400 3400
+Connection ~ 5400 3400
+Text HLabel 5350 4350 0    50   Input ~ 0
+in2
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 616E9486
+P 7000 4250
+AR Path="/6161DA86/616E9486" Ref="J?"  Part="1" 
+AR Path="/6161DB7D/616E9486" Ref="J11"  Part="1" 
+AR Path="/616EE8BC/616E9486" Ref="J7"  Part="1" 
+F 0 "J7" H 6820 4183 50  0000 R CNN
+F 1 "AudioJack2_SwitchT" H 6820 4274 50  0000 R CNN
+F 2 "jacks:thonkiconn" H 7000 4250 50  0001 C CNN
+F 3 "~" H 7000 4250 50  0001 C CNN
+	1    7000 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616E948C
+P 6400 4250
+AR Path="/6161DA86/616E948C" Ref="R?"  Part="1" 
+AR Path="/6161DB7D/616E948C" Ref="R70"  Part="1" 
+AR Path="/616EE8BC/616E948C" Ref="R58"  Part="1" 
+F 0 "R58" V 6193 4250 50  0000 C CNN
+F 1 "400" V 6284 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6330 4250 50  0001 C CNN
+F 3 "~" H 6400 4250 50  0001 C CNN
+	1    6400 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 616E9492
+P 6000 4600
+AR Path="/6161DA86/616E9492" Ref="C?"  Part="1" 
+AR Path="/6161DB7D/616E9492" Ref="C23"  Part="1" 
+AR Path="/616EE8BC/616E9492" Ref="C17"  Part="1" 
+F 0 "C17" V 5748 4600 50  0000 C CNN
+F 1 "100p" V 5839 4600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6038 4450 50  0001 C CNN
+F 3 "~" H 6000 4600 50  0001 C CNN
+	1    6000 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616E9498
+P 6400 4750
+AR Path="/6161DA86/616E9498" Ref="R?"  Part="1" 
+AR Path="/6161DB7D/616E9498" Ref="R71"  Part="1" 
+AR Path="/616EE8BC/616E9498" Ref="R59"  Part="1" 
+F 0 "R59" V 6193 4750 50  0000 C CNN
+F 1 "100k" V 6284 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6330 4750 50  0001 C CNN
+F 3 "~" H 6400 4750 50  0001 C CNN
+	1    6400 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 4250 6200 4250
+$Comp
+L power:GND #PWR?
+U 1 1 616E949F
+P 5450 4150
+AR Path="/6161DA86/616E949F" Ref="#PWR?"  Part="1" 
+AR Path="/6161DB7D/616E949F" Ref="#PWR0189"  Part="1" 
+AR Path="/616EE8BC/616E949F" Ref="#PWR0164"  Part="1" 
+F 0 "#PWR0164" H 5450 3900 50  0001 C CNN
+F 1 "GND" V 5455 4022 50  0000 R CNN
+F 2 "" H 5450 4150 50  0001 C CNN
+F 3 "" H 5450 4150 50  0001 C CNN
+	1    5450 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616E94A5
+P 6700 4450
+AR Path="/6161DA86/616E94A5" Ref="#PWR?"  Part="1" 
+AR Path="/6161DB7D/616E94A5" Ref="#PWR0190"  Part="1" 
+AR Path="/616EE8BC/616E94A5" Ref="#PWR0165"  Part="1" 
+F 0 "#PWR0165" H 6700 4200 50  0001 C CNN
+F 1 "GND" H 6705 4277 50  0000 C CNN
+F 2 "" H 6700 4450 50  0001 C CNN
+F 3 "" H 6700 4450 50  0001 C CNN
+	1    6700 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4450 6700 4350
+Wire Wire Line
+	6700 4350 6800 4350
+Wire Wire Line
+	6800 4250 6650 4250
+Wire Wire Line
+	6550 4750 6650 4750
+Wire Wire Line
+	6650 4750 6650 4250
+Connection ~ 6650 4250
+Wire Wire Line
+	6650 4250 6550 4250
+Wire Wire Line
+	6250 4750 5450 4750
+Wire Wire Line
+	5450 4750 5450 4600
+Wire Wire Line
+	5450 4350 5550 4350
+Wire Wire Line
+	5450 4150 5550 4150
+Wire Wire Line
+	6200 4250 6200 4600
+Wire Wire Line
+	6200 4600 6150 4600
+Connection ~ 6200 4250
+Wire Wire Line
+	6200 4250 6250 4250
+Wire Wire Line
+	5850 4600 5450 4600
+Connection ~ 5450 4600
+Wire Wire Line
+	5450 4600 5450 4350
+Wire Wire Line
+	5350 4350 5450 4350
+Connection ~ 5450 4350
+$Comp
+L Amplifier_Operational:TL072 U?
+U 2 1 616E9E91
+P 5850 4250
+AR Path="/6161DA86/616E9E91" Ref="U?"  Part="2" 
+AR Path="/6161DB7D/616E9E91" Ref="U15"  Part="2" 
+AR Path="/616EE8BC/616E9E91" Ref="U11"  Part="2" 
+F 0 "U11" H 5850 4617 50  0000 C CNN
+F 1 "TL072" H 5850 4526 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5850 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5850 4250 50  0001 C CNN
+	2    5850 4250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
